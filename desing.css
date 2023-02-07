@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("./images/bg-pattern-bottom.svg"), url("./images/bg-pattern-top.svg");
+    min-height: 100vh;
+    background-position: left 48vw top 48vh, right 50vw bottom 38vh;
+    background-repeat: no-repeat;
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+header{
+    display: none;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: #fff;
+    flex-wrap: wrap;
+    margin: auto;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+}
+.card-image {
+    position: relative;
+    height: 250px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color:hsl(227, 10%, 46%);
+}
+
+.card-image-top, .card-image-bottom {
+    height: 50%;
+}
+
+.card-image-top, .card-image-top img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+
+.card-image-text {
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.card-image-text div {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ .card-image-text div img {
+    border-radius: 100%;
+    border-width: 5px;
+    border-color: #fff;
+    border-style: solid;
+}
+
+h2 {
+    width: 100%;
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+span {
+    color: hsl(227, 10%, 46%);
+    padding-left: 10px;
+}
+
+p {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.item {
+    text-align: center;
+    width: 30%;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
